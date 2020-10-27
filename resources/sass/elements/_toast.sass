@@ -1,0 +1,54 @@
+.toast
+    background-color: white !important
+    width: 300px
+    z-index: 99999 !important
+    .close
+        float: right
+        font-size: 1.5rem
+        font-weight: 700
+        line-height: 1
+        color: white !important
+        text-shadow: 0 1px 0 #fff
+        opacity: .5
+    #titleMsg, #bodyMsg
+        font-size: 13.5px !important
+
+// Position
+.toast-top-right-position
+    position: fixed
+    top: 60px
+    right: 35px
+.toast-top-left-position
+    position: fixed
+    top: 60px
+    left: 35px
+.toast-bottom-right-position
+    position: fixed
+    bottom: 35px
+    right: 35px
+.toast-bottom-left-position
+    position: fixed
+    bottom: 35px
+    left: 35px
+
+//Colors
+=toast-header-color($color-bg, $color-border-bottom)
+    display: flex
+    -ms-flex-align: center
+    align-items: center
+    padding: .25rem .75rem
+    background-clip: padding-box
+    background: $color-bg !important
+    color: #ffffff !important
+    border-bottom: 1px solid $color-border-bottom !important
+
+.toast-header-success
+    +toast-header-color($color-green, $color-green)
+.toast-header-error
+    +toast-header-color($color-red, $color-red)
+.toast-header-info
+    +toast-header-color($color-primary, $color-primary)
+.toast-header-warning
+    +toast-header-color($color-orange, $color-orange)
+.toast-header-progress
+    +toast-header-color($color-grey, $color-grey)

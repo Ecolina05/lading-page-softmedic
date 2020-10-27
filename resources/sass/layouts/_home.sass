@@ -1,0 +1,53 @@
+.home
+    background-color: $color-primary
+    background-size: cover
+    #curve
+        width: 100%
+    .img-home
+        width: 250px
+        object-fit: cover
+    .jumbotron
+        background: transparent
+        //background-image: url(../img/bg/bg.jpg) !important;
+        //background: rgb(255,255,255);
+        //background: linear-gradient(90deg, rgba(255,255,255,1) 43%, rgba(255,138,7,1) 100%, rgba(255,138,7,1) 100%);
+        background-repeat: no-repeat
+        background-size: cover
+        padding-top: 150px !important
+        height: auto
+        #contentIps
+            padding-bottom: 2rem
+        .description
+            min-width: 530px !important
+            width: 530px
+        #buttonsHome
+            text-align: left
+        #enfermeros
+            margin-top: 20px !important
+
+        =doctor($delay)
+            transition: .5s all ease-in
+            animation-name: jumping
+            animation-duration: 2.5s
+            animation-delay: $delay
+            animation-timing-function: ease-out
+            animation-iteration-count: infinite
+        #doctor1
+            z-index: 9
+            width: 270px
+            position: absolute
+            top: -60px
+            right: 150px
+            +doctor(1.8s)
+        #doctor2
+            width: 250px
+            position: absolute
+            top: -30px
+            right: 280px
+            +doctor(1.2s)
+        #doctor3
+            width: 270px
+            position: absolute
+            top: -20px
+            right: 40px
+            +doctor(1.5s)

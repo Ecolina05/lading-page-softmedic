@@ -1,0 +1,51 @@
+=responsive($bg-color)
+    padding-left: 20px
+    color: black !important
+    background-color: $bg-color !important
+    height: auto
+
+=border-radius-menu($border-radius)
+    border-radius: $border-radius
+
+@media screen and (max-width: 62em) 
+    #contentIps
+        padding-bottom: 0rem !important
+        #descriptionTitle
+            text-align: center !important
+    #nameIps
+        text-align: center !important
+    #welcome
+        text-align: center !important
+    #buttonsHome
+        text-align: center !important
+        padding-right: 0 !important
+        padding-left: 0 !important
+        margin: 0 auto !important
+    #titleServices
+        text-align: center !important
+    #nav-1
+        +border-radius-menu(8px 8px 0px 0px)
+    #nav-2
+        +border-radius-menu(0px 0px 8px 8px)
+
+    .navbar-nav
+        +responsive(#ffffff)
+        .nav-link
+            color: black !important
+        .dropdown-toggle
+            color: black !important
+        .li-agendar-cita
+            padding-bottom: 20px
+        .li-inicio
+            padding-top: 15px
+            padding-bottom: 15px
+
+    #titleGestionCitas
+        margin-top: 30px
+        margin: 20px
+        #icon
+            display: none !important
+    #section-footer
+        text-align: center
+        .divider
+            float: none !important

@@ -1,0 +1,142 @@
+.btn
+    font-size: 14px !important
+    padding: 0.375rem 0.75rem
+    border-radius: 8px
+    &:focus, &:active
+        box-shadow: none !important
+    &:disabled
+        border-color: #c1c1c1 !important
+        background-color: #fff
+        color: #727272 !important
+    &-rounded
+        border-radius: 300px
+
+// Button top bar 
+    .btn-top-bar
+        background-color: $color-primary-light
+        border-color: $color-primary-light
+        color: white
+    &:hover
+        background-color: $color-primary-light
+        border-color: $color-primary-light
+        color: white
+    &:focus, &:active
+        background-color: $color-primary-light
+        border-color: $color-primary-light
+        color: white
+    &:not(:disabled):not(.disabled):active, .btn-top-bar:not(:disabled):not(.disabled).active, .show > .btn-top-bar.dropdown-toggle
+        background-color: $color-primary-light !important
+        border-color: $color-primary-light
+        color: white
+
+// Blue button
+.bnt-blue
+    background-color: #3089e8
+    &:hover
+        background-color: #3089e8
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important
+    &:focus
+        background-color: #3188e6
+
+// Warning 
+.btn-warning
+    color: white !important
+    border-color: #ff8a07 !important
+    background-color: #ff8a07 !important
+    &:hover
+        color: white !important
+        background-color: #ff8a07  !important
+        border-color: #ff8a07  !important
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important
+    &:disabled
+        border-color: #c1c1c1 !important
+        background-color: #fff !important
+        color: #727272 !important
+
+// Warning outline
+.btn-outline-warning
+    color: #ff8a07 !important
+    border-color: #ff8a07 !important
+    &:hover
+        color: white !important
+        background-color: #ff8a07 !important
+        border-color: #ff8a07 !important
+    &:disabled
+        border-color: #c1c1c1 !important
+        background-color: #fff !important
+        color: #727272 !important
+
+// Secondary outline
+.btn-outline-secondary
+    color: #666b71 !important
+    border-color: #ced4da !important
+    &:hover
+        color: #fff !important
+        background-color: #81858a !important
+        border-color: #81858a !important
+    &:disabled
+        border-color: #c1c1c1 !important
+        background-color: #fff !important
+        color: #727272 !important
+
+// White outline
+.btn-outline-white
+    color: white !important
+    border-color: white !important
+    &:hover
+        color: $color-black !important
+        background-color: white !important
+        border-color: white !important
+    &:disabled
+        border-color: #c1c1c1 !important
+        background-color: #fff !important
+        color: #727272 !important
+
+// White and orange outline
+    &-orange
+        color: white !important
+        border-color: white !important
+    &-orange:hover
+        color: white !important
+        background-color: #ff8a07 !important
+        border-color: #ff8a07 !important
+    &-orange:disabled
+        border-color: #c1c1c1 !important
+        background-color: #fff !important
+        color: #727272 !important
+
+// Other buttons
+#btnUp
+    height: 37px
+    padding-top: 9px
+    position: fixed
+    right: 20px
+    bottom: 40px
+    transition: all 0.5s ease
+    &:hover
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important
+.btn-close-eyelash
+    font-size: 10px
+    padding-bottom: 0
+    padding-left: 5px
+    padding-top: 0
+    padding-right: 5px
+    float: right
+    margin-left: 3px
+    margin-top: 2px
+.btn-refresh-eyelash
+    font-size: 10px
+    padding-bottom: 0
+    padding-left: 5px
+    padding-top: 0
+    padding-right: 5px
+    margin-left: 10px
+    margin-bottom: 2px
+    margin-top: -2px
+.le-btn-close
+    position: absolute
+    left: 213px
+    height: 20px
+    width: 20px
+    padding-bottom: 2px
+    z-index: 999

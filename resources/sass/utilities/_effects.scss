@@ -1,0 +1,21 @@
+@keyframes rotate360{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate360{
+    animation: 2s rotate360 infinite linear
+}
+
+@keyframes jumping{
+    0%{
+        transform: translateY(0vh);
+    }
+    50%{
+        transform: translateY(-1.2vh);
+    }
+    100%{
+        transform: translateY(0vh);
+    }
+}
